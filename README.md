@@ -13,21 +13,14 @@ import { CatalogList } from 'greenbite-frontend';
 ```
 
 ## Estructura del proyecto
-greenbite-frontend/
-├── tests/
-│   ├── SubscriptionCard.test.js
-│   └── strategy.test.js
-├── src/
-│   ├── components/
-│   │   ├── CatalogList.jsx
-│   │   └── SubscriptionCard.jsx
-│   ├── patterns/
-│   │   ├── observer.js
-│   │   └── strategy.js
-│   └── index.js
-├── .babelrc
-├── package.json
-└── README.md
+
+- `__tests__/` — pruebas unitarias de componentes y patrones
+- `src/components/` — componentes React (CatalogList, SubscriptionCard)
+- `src/patterns/` — patrones de diseño (observer.js, strategy.js)
+- `src/index.js` — exports del componente NPM
+- `.babelrc` — configuración de Babel para Jest
+- `package.json` — dependencias y scripts
+- 
 ## Patrones implementados
 
 ### Observer
