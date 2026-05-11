@@ -1,18 +1,18 @@
 // Patrón Strategy — distintos algoritmos de filtrado intercambiables
-const FilterByPrice = {
+export const FilterByPrice = {
   filter: (boxes, value) => boxes.filter(b => b.price <= value)
 };
 
-const FilterBySeason = {
+export const FilterBySeason = {
   filter: (boxes, value) => boxes.filter(b => b.season === value)
 };
 
-const FilterByProducer = {
+export const FilterByProducer = {
   filter: (boxes, value) => 
     boxes.filter(b => b.producer.toLowerCase().includes(value.toLowerCase()))
 };
 
-class CatalogFilter {
+export class CatalogFilter {
   constructor(strategy) {
     this.strategy = strategy;
   }
@@ -23,10 +23,3 @@ class CatalogFilter {
     return this.strategy.filter(boxes, value);
   }
 }
-
-module.exports = {
-  FilterByPrice,
-  FilterBySeason,
-  FilterByProducer,
-  CatalogFilter
-};
