@@ -5,7 +5,7 @@ const SubscriptionCard = require('../src/components/SubscriptionCard');
 
 const mockBox = {
   id: '1',
-  name: 'Caja Básica',
+  name: 'Caja BÃ¡sica',
   description: 'Verduras de temporada',
   price: 15000,
   season: 'verano',
@@ -14,7 +14,7 @@ const mockBox = {
 
 test('renderiza el nombre de la caja', () => {
   render(React.createElement(SubscriptionCard, { box: mockBox }));
-  expect(screen.getByText('Caja Básica')).toBeInTheDocument();
+  expect(screen.getByText('Caja BÃ¡sica')).toBeInTheDocument();
 });
 
 test('renderiza el precio correctamente', () => {
@@ -22,7 +22,7 @@ test('renderiza el precio correctamente', () => {
   expect(screen.getByText('$15000/mes')).toBeInTheDocument();
 });
 
-test('botón de suscripción existe', () => {
+test('botÃ³n de suscripciÃ³n existe', () => {
   render(React.createElement(SubscriptionCard, { box: mockBox }));
   expect(screen.getByText('Suscribirse')).toBeInTheDocument();
 });
