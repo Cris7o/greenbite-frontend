@@ -20,7 +20,7 @@ import { CatalogList } from 'greenbite-frontend';
 - `src/index.js` — exports del componente NPM
 - `.babelrc` — configuración de Babel para Jest
 - `package.json` — dependencias y scripts
-- 
+
 ## Patrones implementados
 
 ### Observer
